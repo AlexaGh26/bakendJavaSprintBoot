@@ -9,6 +9,46 @@ import java.sql.Timestamp;
 @Table(name="information_service")
 public class InformationService {
 
+    public Integer getIdService() {
+        return idService;
+    }
+
+    public void setIdService(Integer idService) {
+        this.idService = idService;
+    }
+
+    public Integer getIdTechnical() {
+        return idTechnical;
+    }
+
+    public void setIdTechnical(Integer idTechnical) {
+        this.idTechnical = idTechnical;
+    }
+
+    public Timestamp getDateInit() {
+        return dateInit;
+    }
+
+    public void setDateInit(Timestamp dateInit) {
+        this.dateInit = dateInit;
+    }
+
+    public Timestamp getDateEnd() {
+        return dateEnd;
+    }
+
+    public void setDateEnd(Timestamp dateEnd) {
+        this.dateEnd = dateEnd;
+    }
+
+    public Integer getTypeServices() {
+        return typeServices;
+    }
+
+    public void setTypeServices(Integer typeServices) {
+        this.typeServices = typeServices;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_service")
